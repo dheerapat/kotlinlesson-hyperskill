@@ -1,1 +1,0 @@
-kotlinc [.kt file] -include-runtime -d [.jar file]

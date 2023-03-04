@@ -10,5 +10,5 @@ $ kotlinc [.kt file] -include-runtime -d [.jar file]
 ```
 Run .jar file with this command:
 ```
-java -jar [.jar file]
+$ java -jar [.jar file]
 ```
