@@ -7,63 +7,63 @@ class CoffeeMaker {
 
     fun buyCoffee() {
         println("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino:")
-                val need = readln()
-                when (need) {
-                    "1" -> {
-                        if (this.water < 250) {
-                            println("Sorry, not enough water")
-                        } else if (this.coffeeBean < 16) {
-                            println("Sorry, not enough coffee bean")
-                        } else if (this.cups < 1) {
-                            println("Sorry, not enough cup")
-                        } else {
-                            println("I have enough resources, making you a coffee!")
-                            this.water -= 250
-                            this.coffeeBean -= 16
-                            this.cups -= 1
-                            this.money += 4
-                        }
-                    }
-                    "2" -> {
-                        if (this.water < 350) {
-                            println("Sorry, not enough water")
-                        } else if (this.milk < 75) {
-                            println("Sorry, not enough milk")
-                        } else if (this.coffeeBean < 20) {
-                            println("Sorry, not enough coffee bean")
-                        } else if (this.cups < 1) {
-                            println("Sorry, not enough cup")
-                        } else {
-                            println("I have enough resources, making you a coffee!")
-                            this.water -= 350
-                            this.milk -= 75
-                            this.coffeeBean -= 20
-                            this.cups -= 1
-                            this.money += 7
-                        }
-                    }
-                    "3" -> {
-                        if (this.water < 200) {
-                            println("Sorry, not enough water")
-                        } else if (this.milk < 100) {
-                            println("Sorry, not enough milk")
-                        } else if (this.coffeeBean < 12) {
-                            println("Sorry, not enough coffee bean")
-                        } else if (this.cups < 1) {
-                            println("Sorry, not enough cup")
-                        } else {
-                            println("I have enough resources, making you a coffee!")
-                            this.water -= 200
-                            this.milk -= 100
-                            this.coffeeBean -= 12
-                            this.cups -= 1
-                            this.money += 6
-                        }
-                    }
-                    "back" -> {
-                        return
-                    }
+        val need = readln()
+        when (need) {
+            "1" -> {
+                if (this.water < 250) {
+                    println("Sorry, not enough water")
+                } else if (this.coffeeBean < 16) {
+                    println("Sorry, not enough coffee bean")
+                } else if (this.cups < 1) {
+                    println("Sorry, not enough cup")
+                } else {
+                    println("I have enough resources, making you a coffee!")
+                    this.water -= 250
+                    this.coffeeBean -= 16
+                    this.cups -= 1
+                    this.money += 4
                 }
+            }
+            "2" -> {
+                if (this.water < 350) {
+                    println("Sorry, not enough water")
+                } else if (this.milk < 75) {
+                    println("Sorry, not enough milk")
+                } else if (this.coffeeBean < 20) {
+                    println("Sorry, not enough coffee bean")
+                } else if (this.cups < 1) {
+                    println("Sorry, not enough cup")
+                } else {
+                    println("I have enough resources, making you a coffee!")
+                    this.water -= 350
+                    this.milk -= 75
+                    this.coffeeBean -= 20
+                    this.cups -= 1
+                    this.money += 7
+                }
+            }
+            "3" -> {
+                if (this.water < 200) {
+                    println("Sorry, not enough water")
+                } else if (this.milk < 100) {
+                    println("Sorry, not enough milk")
+                } else if (this.coffeeBean < 12) {
+                    println("Sorry, not enough coffee bean")
+                } else if (this.cups < 1) {
+                    println("Sorry, not enough cup")
+                } else {
+                    println("I have enough resources, making you a coffee!")
+                    this.water -= 200
+                    this.milk -= 100
+                    this.coffeeBean -= 12
+                    this.cups -= 1
+                    this.money += 6
+                }
+            }
+            "back" -> {
+                return
+            }
+        }
     }
 
     fun fill() {
